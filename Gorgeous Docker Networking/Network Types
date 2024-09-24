@@ -20,5 +20,8 @@ LAB - Network Types
     sudo apt update                     #Lets install docker
     sudo apt install docker.io -y       
     ip address show                     #see your new docker0 network interface
-    sudo docker network ls              #list current docker networks. See Driver "bridge"
-
+    sudo docker network ls              #list current docker networks. See Driver equals to network type
+    sudo docker run -itd --rm --name Harry busybox          #--itd to make it interactable and detached, --rm to remove itself after, --name is name of a contener. busybox is very light linux image, great for conteners
+    sudo docker run -itd --rm --name Hermiona busybox
+    sudo docker run -itd --rm --name Ron nginx
+    sudo docker ps
