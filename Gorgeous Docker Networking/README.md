@@ -1,6 +1,6 @@
 # Docker Network Types
 
-Docker offers several built-in network drivers that allow for various methods of communication between containers and between containers and the external world. Below is a brief overview of each:
+Docker offers several built-in network drivers that allow for various methods of communication between containers and between containers and the external world. Below is a brief overview of each.
 
 ## Bridge
 
@@ -16,10 +16,10 @@ Docker offers several built-in network drivers that allow for various methods of
 ## Host
 
 
-- **Description:**  
+- Description:  
       The container shares the network stack with the Docker host.  
-- **Functionality:**  
+- Functionality:  
       The container directly uses the host's network interfaces without network isolation.   
-- **Use Case:**    
+- Use Case:   
       Useful when the containerized application requires high network performance or needs to listen on the same ports as the host
 

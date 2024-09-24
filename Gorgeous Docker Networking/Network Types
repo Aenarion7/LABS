@@ -1,1 +1,9 @@
-1. Default Bridge:
+prerequisites
+1. GCP Create Compute Engine Instance with Ubuntu
+dddd
+2. 
+
+1. Default Bridge. Configuration of :
+
+ip address show
+
