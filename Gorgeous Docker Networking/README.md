@@ -6,9 +6,9 @@ Docker offers several built-in network drivers that allow for various methods of
 
 - **Description:**  
     This is the default network type for Docker containers.
-- Functionality:
+- **Functionality:**
     Creates an internal, private network on the Docker host, allowing containers to communicate with each other.
-- Use Case:
+- **Use Case:**
     Ideal for applications running on a single host that need to interact with one another.
 
 
@@ -16,10 +16,10 @@ Docker offers several built-in network drivers that allow for various methods of
 ## Host
 
 
-**-Description:**  
+- **Description:**  
       The container shares the network stack with the Docker host.  
-**-Functionality:**  
+- **Functionality:**  
       The container directly uses the host's network interfaces without network isolation.   
-**-Use Case:**    
+- **Use Case:**    
       Useful when the containerized application requires high network performance or needs to listen on the same ports as the host
 
