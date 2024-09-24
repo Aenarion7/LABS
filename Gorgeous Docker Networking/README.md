@@ -1,8 +1,8 @@
 # Docker Network Types
 
 Docker offers several built-in network drivers that allow for various methods of communication between containers and between containers and the external world. Below is a brief overview of each:
-
-## Bridge
+---
+### Bridge
 <dl>
   <dt>Description:<dt> 
     <dd>This is the default network type for Docker containers.<dd>
