@@ -15,7 +15,7 @@ Prerequisites
     3. Log in to Ubuntu
 
 LAB - Network Types
-# Bridge (Default)
+# BRIDGE (Default)
     ip address show                                             #see your network interfacess
     sudo apt update                                             #Lets install docker
     sudo apt install docker.io -y       
@@ -27,14 +27,14 @@ LAB - Network Types
     sudo docker ps                                              #check if conteiners are up
     ip add show                                                 #see your network now
     bridge link                                                 #see docker names and that they are connected to docker0
-                                                                # Docker runs its own DHCP, thats why conteiners has them own IP-s
-    sudo docker inspect bridge  #see containers and theirs coresponding IP-s in that same docker0 network. Conteneirs can talk to each other.  
-    #check connectivity
+                                                                #Docker runs its own DHCP, thats why conteiners has them own IP-s
+    sudo docker inspect bridge                                  #see containers and theirs coresponding IP-s in that same docker0 network. Conteneirs can talk to each other.  
+    #CHECK CONECTIVITY
         sudo docker exec -it Harry sh                           #enter the cointainer, sh means shell
         ping www.wp.pl                      
         ping <other_conteiner>
         iproute                                                 #check default route. There is NAT, thats why this works
          exit  
-    #expouse static website from NGINX to web
+    #EXPOSE A STATIC WEBSITE FROM NGINX TO THE WEB
         sudo docker stop Ron
         sudo docker run -itd --rm -p 80:80 --name Ron nginx     #port 80 of host mapping to docker port 80
