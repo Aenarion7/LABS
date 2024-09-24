@@ -12,11 +12,13 @@ Prerequisites
             --target-tags= created-tag \
             --source-ranges=0.0.0.0/0 \
             --description="Allow HTTP and HTTPS traffic to instances with tag allow-nginx"
+    3. Log in to Ubuntu
 
 LAB - Network Types
-# Bridge 
-    1. Log in to Ubuntu
-    2. Default Bridge. Configuration of :
-
-ip address show
+# Bridge (Default)
+    ip address show                     #see your network interfacess
+    sudo apt update                     #Lets install docker
+    sudo apt install docker.io -y       
+    ip address show                     #see your new docker0 network interface
+    sudo docker network ls              #list current docker networks. See Driver "bridge"
 
