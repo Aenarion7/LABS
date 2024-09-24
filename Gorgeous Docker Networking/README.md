@@ -11,6 +11,7 @@ Docker offers several built-in network drivers that allow for various methods of
 - Use Case:  
     Ideal for applications running on a single host that need to interact with one another.
 
+![image](https://github.com/user-attachments/assets/67d25114-48cc-4130-a919-28adc6814263)
 
 
 ## Host
