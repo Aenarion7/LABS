@@ -14,6 +14,23 @@ Docker offers several built-in network drivers that allow for various methods of
 ![image](https://github.com/user-attachments/assets/67d25114-48cc-4130-a919-28adc6814263)
 
 
+## BRIDGE (User Defined)
+
+- Description:
+    Exactly this same as previous but it is user created. It should be used instead of Default. Allows network ISOLATION and DNS in the network, so one can ping containers by names
+- Functionality:  
+    Creates an internal, private network on the Docker host, allowing containers to communicate with each other.
+- Use Case:  
+    Ideal for applications running on a single host that need to interact with one another.
+    
+
+
+
+
+
+
+
+
 ## Host
 
 

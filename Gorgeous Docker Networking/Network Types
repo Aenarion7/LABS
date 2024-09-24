@@ -38,3 +38,16 @@ LAB - Network Types
     #EXPOSE A STATIC WEBSITE FROM NGINX TO THE WEB
         sudo docker stop Ron
         sudo docker run -itd --rm -p 80:80 --name Ron nginx     #port 80 of host mapping to docker port 80
+
+# BRIDGE (User Defined)
+    sudo docker network create Hogwart                          #create new network. Bridge user created
+    sudo docker network ls                                      #see new network
+    sudo docker run -itd --rm --network Hogwart --name Hagrid busybox       #run new container in user created Bridge
+    sudo docker run -itd --rm --network Hogwart --name Lucjus busybox       
+    ip address show                                             #check setup
+    bridge link
+    sudo docker inspect Hogwart                                 #see IP for Hagrid and Lucjus
+    #CHECK CONECTIVITY betweean Lucjus and Hagrid in User Created Network
+        sudo docker exec -it Hagrid sh
+        ping Lucjus
+        exit
