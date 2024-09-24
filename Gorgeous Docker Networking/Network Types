@@ -1,9 +1,22 @@
-prerequisites
-1. GCP Create Compute Engine Instance with Ubuntu
-dddd
-2. 
+Prerequisites
+    1. GCP Create Compute Engine Instance with Ubuntu
+    2. Create appropriate Firewall Rule:
+        a. Assign Network Tag to the Compute Engine Instance
+        b. Create Firewall Rule from GUI or GCP Console, similiar to that one below:
+            gcloud compute firewall-rules create allow-nginx-traffic \
+            --direction=INGRESS \
+            --priority=1000 \
+            --network=default \
+            --action=ALLOW \
+            --rules=tcp:80,tcp:443 \
+            --target-tags= created-tag \
+            --source-ranges=0.0.0.0/0 \
+            --description="Allow HTTP and HTTPS traffic to instances with tag allow-nginx"
 
-1. Default Bridge. Configuration of :
+LAB - Network Types
+# Bridge 
+    1. Log in to Ubuntu
+    2. Default Bridge. Configuration of :
 
 ip address show
 
