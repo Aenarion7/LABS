@@ -45,4 +45,6 @@ Docker offers several built-in network drivers that allow for various methods of
     Provides direct network access with individual IPs
 - Use Case:
     Scenarios requiring containers to be directly accessible on the physical network
-- It has some drawbacks: NoDHCP, you need to set address and if you dont, there could be a problem with two DHCP severs. And Promiscous mode is needed on all divcess
+- It has some drawbacks: NoDHCP, you need to set address and if you dont, there could be a problem with two DHCP severs. And Promiscous mode is needed on all devicess
+
+![MacVLAN](https://github.com/user-attachments/assets/72e5531e-e7f8-4b69-a429-61046d4f8717)
