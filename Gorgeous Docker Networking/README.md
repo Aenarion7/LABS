@@ -26,12 +26,7 @@ Docker offers several built-in network drivers that allow for various methods of
 ![User Created Bridge](https://github.com/user-attachments/assets/e5490bfc-d3c2-469b-9446-045ffc177b10)
 
 
-
-
-
-
 ## Host
-
 
 - Description:  
       The container shares the network stack with the Docker host.  
@@ -40,3 +35,4 @@ Docker offers several built-in network drivers that allow for various methods of
 - Use Case:   
       Useful when the containerized application requires high network performance or needs to listen on the same ports as the host
 
+![Host](image.png)

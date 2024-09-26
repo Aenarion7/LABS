@@ -51,3 +51,7 @@ LAB - Network Types
         sudo docker exec -it Hagrid sh
         ping Lucjus
         exit
+# HOST
+    sudo docker stop Ron
+    sudo docker run -itd --rm --network host --name Ron nginx
+    
