@@ -35,4 +35,4 @@ Docker offers several built-in network drivers that allow for various methods of
 - Use Case:   
       Useful when the containerized application requires high network performance or needs to listen on the same ports as the host
 
-![Host](image.png)
+![Host](https://github.com/user-attachments/assets/b5847482-513d-4f65-96fa-b029aca51711)
