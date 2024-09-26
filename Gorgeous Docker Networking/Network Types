@@ -54,4 +54,14 @@ LAB - Network Types
 # HOST
     sudo docker stop Ron
     sudo docker run -itd --rm --network host --name Ron nginx
-    
+
+# MACVLAN
+    sudo docker network create -d macvlan --subnet 10.202.0.0/24  --gateway 10.202.0.1 -o parent=ens4 Durmstrang     #-d means driver which = network. Also we need to specyfie subnet we put it in to and lastly we tie our macvlan to host network interface
+    sudo docker network ls                                      #see new network and its type
+    sudo docker stop Hagrid Lucjus
+    sudo docker run -itd --rm --network Durmstrang --ip 10.202.0.30 --name Hagrid busybox           #Now Hagrid container is connected to new network as a reular network machine. If there is no connection, you need promiscous mode
+    #go to host
+    sudo ip link set ens4 promisc on        #it is needed on all devicess and reboot is needed
+    sudo docker run -itd --rm --network Durmstrang --ip 10.202.0.31 --name Lucjus busybox        
+    sudo docker exec -it Hagrid sh
+    ping Lucjus                 #or IP, there should be a connection
