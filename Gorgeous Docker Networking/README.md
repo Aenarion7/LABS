@@ -59,3 +59,6 @@ Docker offers several built-in network drivers that allow for various methods of
 ## IPVLAN L2
 - Description:
     L2 IPVLAN gives all which directly connected to the network conteiners does in Macvlan. Containers share MAC with the host, so there is no problem with promiscous mode. Conteiners has their own IP addresses. BUT one MAC could be a problem (security, architecture)
+
+  ![IPL2](https://github.com/user-attachments/assets/798949e4-ccae-4696-9c3b-c77dafdac980)
+
