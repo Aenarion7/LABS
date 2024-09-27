@@ -37,7 +37,7 @@ Docker offers several built-in network drivers that allow for various methods of
 
 ![Host](https://github.com/user-attachments/assets/b5847482-513d-4f65-96fa-b029aca51711)
 
-## Macvlan Bridge
+## MACVLAN Bridge
 
 - Description:  
     Assigns a unique MAC address to each container, allowing it to appear as a physical device on the network. So like virtual machines on the server
@@ -50,9 +50,12 @@ Docker offers several built-in network drivers that allow for various methods of
 ![MacVLAN](https://github.com/user-attachments/assets/72e5531e-e7f8-4b69-a429-61046d4f8717)
 
 
-## Macvlan 802.1q
+## MACVLAN 802.1q
 - Description:
     Same as Macvlan Bridge, but it adds trunked VLAN-s.
   
 ![MacVLAN 802.1q](https://github.com/user-attachments/assets/9385ca98-7033-4574-a6ad-f93054c88651)
 
+## IPVLAN L2
+- Description:
+    L2 IPVLAN gives all which directly connected to the network conteiners does in Macvlan. Containers share MAC with the host, so there is no problem with promiscous mode. Conteiners has their own IP addresses. BUT one MAC could be a problem (security, architecture)

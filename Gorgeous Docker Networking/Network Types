@@ -73,3 +73,14 @@ LAB - Network Types
     sudo ipaddress show          #see new sub interface
     #similiar with Lucjus
 
+# IPVLAN L2
+    sudo docker stop Hagrid Lucjus
+    sudo docker network create -d ipvlan --subnet 10.202.0.0 --gateway 10.202.0.1 -o parent=ens4 Durmstrang
+    sudo docker run -itd --rm --network Durmsrtang --ip 10.202.0.40 --name Hagrid busybox
+    sudo docker run -itd --rm --network Durmsrtang --ip 10.202.0.41 --name Lucjus busybox
+    sudo docker exec -it Hagrid sh
+    # Test conectivity to Lucjus and internet
+        exit
+    ip address show         #see, same MAC addresses
+
+# IPVLAN L3
