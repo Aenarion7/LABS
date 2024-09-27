@@ -84,3 +84,13 @@ LAB - Network Types
     ip address show         #see, same MAC addresses
 
 # IPVLAN L3
+    sudo docker stop Hagrid Lucjus
+    sudo docker network rm Durmstrang
+    sudo docker network create -d ipvlan --subnet 192.168.90.0/24  -o parent=ens4 -o ipvlan_mode=l3 Durmstrang        # you dont specyfi gateway, it will be your parent interface we tied to
+    # if there would be more than one network, you need to specyfie them all at once:
+        #sudo docker network create -d ipvlan --subnet 192.168.90.0/24  -o parent=ens4 -o ipvlan_mode=l3 --subnet 192.168.95.0/24 Durmstrang  
+    sudo docker run -itd --rm --network Durmstrang ip-- 192.168.90.11 --name Hagrid busybox
+    sudo docker run -itd --rm --network Durmstrang ip-- 192.168.90.12 --name Hagrid busybox
+    sudo docker inspect Durmstrang          #see network addresses
+    # when you check connectivity from Hagrid, it can ping Lucjus, it could ping other similiar L3 Networks, but it will not ping Internet, there is no routing at this moment. It needs to be added
+    # So when two networks share the same network interface, they can ping each other

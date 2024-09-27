@@ -63,4 +63,6 @@ Docker offers several built-in network drivers that allow for various methods of
 
 ![IPVLAN L2](https://github.com/user-attachments/assets/1b48860a-42e8-4408-87cb-19f458637d45)
 
-
+## IPVLAN L3
+- Description:
+    In that network type, one can think about Host as a Router betwean switch and docker containers. The one drowback of this, there is routing needed, static routes/dynamic. But it gives our best isolation.
