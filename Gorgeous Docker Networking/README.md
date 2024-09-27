@@ -48,3 +48,9 @@ Docker offers several built-in network drivers that allow for various methods of
 - It has some drawbacks: NoDHCP, you need to set address and if you dont, there could be a problem with two DHCP severs. And Promiscous mode is needed on all devicess
 
 ![MacVLAN](https://github.com/user-attachments/assets/72e5531e-e7f8-4b69-a429-61046d4f8717)
+
+
+## Macvlan 802.1q
+- Description:
+    Same as Macvlan Bridge, but it adds trunked VLAN-s.
+
