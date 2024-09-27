@@ -69,3 +69,5 @@ Docker offers several built-in network drivers that allow for various methods of
 
   ![IPVLAN L3](https://github.com/user-attachments/assets/5c9c3ea6-7fff-4733-8c17-e44b6bccd570)
 
+## Overlay networks - docker swarm - not covered
+## The none network - loopback network - not covered 
