@@ -1,4 +1,10 @@
- LAB 1 Install Compute engine, Variables, SSH conectrion and some basics
+ #LAB 1 
+    DEPLOY COMPUTE ENGINE INSTANCE
+    BASICS
+        SSH CONNECTION from GCP to INSTANCE
+        SET DEFAULT VARIABLES
+
+
     View Active Account and Project
         gcloud auth list
         gcloud config list project
