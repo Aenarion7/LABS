@@ -1,13 +1,13 @@
- # LAB 1 
-    DEPLOY COMPUTE ENGINE INSTANCE
-    BASICS
-        SSH CONNECTION from GCP to INSTANCE
-        SET DEFAULT VARIABLES
+ # LAB 1 OVERVIEW:
+- DEPLOY COMPUTE ENGINE INSTANCE
+- SH CONNECTION from GCP to INSTANCE
+- DEFAULT VARIABLES
+- Some basics
 
 
-    - View Active Account and Project
-        gcloud auth list
-        gcloud config list project
+## View Active Account and Project:
+    gcloud auth list
+    gcloud config list project
 
 ## Set default Project Region and Zone [GCP Console]
         export REGION=us-central1         
