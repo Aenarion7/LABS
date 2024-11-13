@@ -1,4 +1,4 @@
- # Lab overview:
+ # Overview:
 - DEPLOY COMPUTE ENGINE INSTANCE
 - SH CONNECTION from GCP to INSTANCE
 - DEFAULT VARIABLES
@@ -43,10 +43,10 @@ To make variables consistent over network terminal sesions they need to be added
 ## Deploy Windows Image:
         gcloud compute instances create INSTANCE_NAME \
         --image-family=windows-2022 \
-        --image-project=windows-cloud \             -your project name
+        --image-project=windows-cloud \             #your project name
         --zone=$ZONE \
         --machine-type=e2-medium
-        --tags=rdp-server                           -adding tag
+        --tags=rdp-server                           #adding tag
 
 Configure RD and connect:
 
