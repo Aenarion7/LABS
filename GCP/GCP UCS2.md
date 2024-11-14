@@ -3,8 +3,8 @@
 - Set up Application Load Balancer
 - Create VM template
 - Create VM pools
-- Test connectivity
-- Add firewall Rules
+- Test connectivity and observe load balancers work
+- Add firewall Rules to allow some external traffic
 
 # Lab 1. Set Network Load Balancer
 ## Set the default region and zone
@@ -106,3 +106,7 @@ Use curl command to access the external IP address, replacing IP_ADDRESS with an
     while true; do curl -m1 $IPADDRESS; done
 
     Ctrl+C to stop
+
+
+
+# Lab 2. Set Application Load Balancer
