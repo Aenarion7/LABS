@@ -110,10 +110,10 @@ Use curl command to access the external IP address, replacing IP_ADDRESS with an
 
 
 # Lab 2. Set Application Load Balancer
-Application Load Balancer in this lab will load traffic to Backend Service which is MAnaged Instance Group. 
+Application Load Balancer in this lab will load traffic to Backend Service which is Managed Instance Group. 
 
 ## Setting Environment
-### Create Load Balancer template
+### Create Compute Engine Template
 
 This command will create VM template (instance template). This tempate can be used to create new instance in borders of one region. There is also a script which runs after every new vm start. 
 
