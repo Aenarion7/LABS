@@ -3,9 +3,10 @@
 - SSH Connection from GCP to VM Instance
 - Default Variables
 - Some other basics
+- List all Zones in a "Asia"
 
 # 1. Set Variables, view Basic information
-### View Active Account and Project:
+### View Active Account and Project
     gcloud auth list
     gcloud config list project
 
@@ -55,3 +56,6 @@ Check if server is ready for RD. There should be "Instance setup finished. Insta
         set password
         
 Connect using RD client to external IP
+
+# List all Zones in a "Asia"
+    gcloud compute zones list | grep -iE 'NAME.*asia' | sed 's/NAME: //i' | sort

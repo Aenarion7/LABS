@@ -6,7 +6,7 @@
 - Test connectivity and observe load balancers work
 - Add firewall Rules to allow some external traffic
 
-# Lab 1. Set Network Load Balancer
+# 1. Set Network Load Balancer
 ## Set the default region and zone
     gcloud config set compute/region Region
     gcloud config set compute/zone Zone
@@ -109,7 +109,7 @@ Use curl command to access the external IP address, replacing IP_ADDRESS with an
 
 
 
-# Lab 2. Set Application Load Balancer
+# 2. Set Application Load Balancer
 Application Load Balancer in this lab will load traffic to Backend Service which is Managed Instance Group. 
 
 ## Setting Environment
@@ -231,3 +231,4 @@ When the VMs are healthy, test the load balancer using a web browser, going to h
 This may take three to five minutes. If you do not connect, wait a minute, and then reload the browser.
 
 Your browser should render a page with content showing the name of the instance that served the page, along with its zone (for example, Page served from: lb-backend-group-xxxx).
+

@@ -1,1 +1,1 @@
-UCS - Use Case Scenarios. Here you can find building blocks for doing more complex assignments.
+Use Case Scenarios - Here you can find basics and building blocks for doing more complex assignments.
