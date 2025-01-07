@@ -5,7 +5,7 @@ Geolocation policy helps to ensure that client request is routed to a closest se
 - Create a Geolocation routing policy
 - Test configuration
 
-IMAGE
+<Image 1>
 
 ### Enable APIs
     gcloud services enable compute.googleapis.com
