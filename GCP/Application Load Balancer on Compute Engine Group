@@ -1,9 +1,11 @@
-### LAB1. Set  App Load Balancing on Compute Engine Group
+### Application Load Balancer on Compute Engine Group
+
 ## Set default Project Region and Zone [GCP Console Variables]
     export REGION=us-central1
     export ZONE=us-central1-b
     gcloud config set compute/region $REGION
     gcloud config set compute/zone $ZONE
+
 ## Create Compute Engine template
 gcloud compute instance-templates create gg-template-nginx \
     --network=default \
