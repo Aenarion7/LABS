@@ -3,7 +3,7 @@ Private connections are connections made to a VM for example, over its internal 
 - Create VPC network and firewall rules
 - Create VM without external address
 - Enable Private Google Access
-# 2 Configure Cloud NAT
+# 2 Configure Cloud NAT gateway
 
 
 # 1 Configure Private Connection
