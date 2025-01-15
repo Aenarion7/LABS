@@ -6,7 +6,8 @@ The purpose of this lab is to provide an understanding of how communication occu
 - Create a VM instance with multiple network interfaces
 
 
-image with topology
+![image](https://github.com/user-attachments/assets/b37803ca-fca7-434d-8814-752f2cc4efb3)
+
 
 ## Create custom mode VPC networks
 Create VPC network "managementnet" and new subnet managementsubnet-us:
